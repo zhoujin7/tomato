@@ -11,12 +11,18 @@
             "url": "https://www.softwareok.com/Download/Q-Dir_Portable_x64.zip",
             "hash": "f1ce7281b7c6c059b4832594438c4f57896a4fbd23645461b7bdf79afbb6f421",
             "installer": {
-                "script": "mv \"$dir/Q-Dir_x64.exe\" \"$dir/Q-Dir.exe\""
+                "script": [
+                    "mv \"$dir/Q-Dir_x64.exe\" \"$dir/Q-Dir.exe\"",
+                    "New-Item -Path $dir\\start.qdr -ItemType File"
+                ]
             }
         },
         "32bit": {
             "url": "https://www.softwareok.com/Download/Q-Dir_Portable.zip",
-            "hash": "ce70cc8083e832ed990ddc826b823d2a1d8c8f5a2b84cf9732f9a30772746330"
+            "hash": "ce70cc8083e832ed990ddc826b823d2a1d8c8f5a2b84cf9732f9a30772746330",
+            "installer": {
+                "script": "New-Item -Path $dir\\start.qdr -ItemType File"
+            }
         }
     },
     "persist": [
