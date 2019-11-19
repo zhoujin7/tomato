@@ -1,0 +1,55 @@
+{
+    "homepage": "http://www.softwareok.com/?seite=Freeware/Q-Dir",
+    "version": "7.94",
+    "description": "Q-Dir is a great alternative file manager for Windows with a amazing Quadro-View technique. ",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "extract_dir": "Q-Dir",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.softwareok.com/Download/Q-Dir_Portable_x64.zip",
+            "hash": "bf91a872eb09e8c5a9e1c0ef37d700ca1deb7a30325b6c1293ca1899d73e64b1",
+            "installer": {
+                "script": "mv \"$dir/Q-Dir_x64.exe\" \"$dir/Q-Dir.exe\""
+            }
+        },
+        "32bit": {
+            "url": "https://www.softwareok.com/Download/Q-Dir_Portable.zip",
+            "hash": "7d2b619651d34262212eb7d84d06033ec0bf59d46fa6016f5e478c7d2bc0edcd"
+        }
+    },
+    "persist": [
+        "Favoriten",
+        "start.qdr",
+        "Q-Dir.ini"
+    ],
+    "bin": "Q-Dir.exe",
+    "shortcuts": [
+        [
+            "Q-Dir.exe",
+            "Q-Dir"
+        ]
+    ],
+    "checkver": "Q-Dir ([^\\ ]+)",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.softwareok.com/Download/Q-Dir_Portable_x64.zip",
+                "hash": {
+                    "mode": "extract",
+                    "url": "https://www.softwareok.com/?Download=Q-Dir",
+                    "find": "Q-Dir_Portable_x64\\.zip<div id=[\\w\\d]{5} align=right><a href=\"https://www\\.virustotal\\.com/de/file/($sha256)"
+                }
+            },
+            "32bit": {
+                "url": "https://www.softwareok.com/Download/Q-Dir_Portable.zip",
+                "hash": {
+                    "mode": "extract",
+                    "url": "https://www.softwareok.com/?Download=Q-Dir",
+                    "find": "Q-Dir_Portable\\.zip<div id=[\\w\\d]{5} align=right><a href=\"https://www\\.virustotal\\.com/de/file/($sha256)"
+                }
+            }
+        }
+    }
+}
