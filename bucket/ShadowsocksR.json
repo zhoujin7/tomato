@@ -25,7 +25,7 @@
         "CreateFile 'gui-config.json' '{}'",
         "CreateFile 'transfer_log.json' '{}'",
         "CreateFile 'user.rule'",
-        "CreateFile 'user-rule.txt'"
+        "CreateFile 'user-rule.txt' \"! Put user rules line by line in this file.`r`n! See https://adblockplus.org/en/filter-cheatsheet`r`n\""
     ],
     "persist": [
         "chn_ip.txt",
