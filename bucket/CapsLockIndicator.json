@@ -8,13 +8,17 @@
     "installer": {
         "script": [
             "Move-Item $original_dir\\CLI*.exe  $original_dir\\CapsLockIndicator.exe",
-            "$LocaleNames = 'de', 'fr', 'es', 'zh-CN', 'ru', 'pt-PT', 'pt-BR', 'it'",
+            "$LocaleFileNames = 'de', 'fr', 'es', 'zh-CN', 'ru', 'pt-PT', 'pt-BR', 'it'",
+            "$LocaleNames = 'de-*', 'fr-*', 'es-*', 'zh-CN', 'ru-*', 'pt-PT', 'pt-BR', 'it-*'",
             "$LocaleName = (Get-WinSystemLocale).Name",
-            "if ($LocaleName -in $LocaleNames) {",
-            "    Invoke-WebRequest -Uri \"https://cli.jonaskohl.de/uicul/$LocaleName.zip\" -OutFile $original_dir\\$LocaleName.zip",
-            "    Expand-Archive $original_dir\\$LocaleName.zip -DestinationPath $original_dir",
-            "    Remove-Item $original_dir\\$LocaleName.zip",
-            "}"
+            "for ($i = 0; $i -lt $LocaleNames.Length; $i++) {",
+            "    if ($LocaleName -like $LocaleNames[$i]) {",
+            "        break",
+            "    }",
+            "}",
+            "Invoke-WebRequest -Uri \"https://cli.jonaskohl.de/uicul/$($LocaleFileNames[$i]).zip\" -OutFile $original_dir\\$($LocaleFileNames[$i]).zip",
+            "Expand-Archive $original_dir\\$($LocaleFileNames[$i]).zip -DestinationPath $original_dir",
+            "Remove-Item $original_dir\\$($LocaleFileNames[$i]).zip"
         ]
     },
     "bin": "CapsLockIndicator.exe",
