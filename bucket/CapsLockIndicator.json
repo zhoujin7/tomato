@@ -9,7 +9,7 @@
         "script": [
             "Move-Item $original_dir\\CLI*.exe  $original_dir\\CapsLockIndicator.exe",
             "$LocaleFileNames = 'de', 'fr', 'es', 'zh-CN', 'ru', 'pt-PT', 'pt-BR', 'it'",
-            "$LocaleNames = 'de-*', 'fr-*', 'es-*', 'zh-CN', 'ru-*', 'pt-PT', 'pt-BR', 'it-*'",
+            "$LocaleNames = 'de-*', 'fr-*', 'es-*', 'zh-CN', 'ru-RU', 'pt-PT', 'pt-BR', 'it-*'",
             "$LocaleName = (Get-WinSystemLocale).Name",
             "for ($i = 0; $i -lt $LocaleNames.Length; $i++) {",
             "    if ($LocaleName -like $LocaleNames[$i]) {",
