@@ -1,0 +1,31 @@
+{
+    "version": "3.6",
+    "homepage": "https://github.com/iikira/BaiduPCS-Go",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/iikira/BaiduPCS-Go/releases/download/v3.6/BaiduPCS-Go-v3.6-windows-x64.zip",
+            "hash": "ae6ff0bab7a165df030afb656bf4d7c1caae0f39ba1aa85203379c9e22180c75",
+            "extract_dir": "BaiduPCS-Go-v3.6-windows-x64"
+        },
+        "32bit": {
+            "url": "https://github.com/iikira/BaiduPCS-Go/releases/download/v3.6/BaiduPCS-Go-v3.6-windows-x86.zip",
+            "hash": "1f5c89350a4ddae87ba5fc368b821e7fd823f50f08a5899c0bd47d95b62fd32a",
+            "extract_dir": " BaiduPCS-Go-v3.6-windows-x86"
+        }
+    },
+    "bin": "BaiduPCS-Go.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/iikira/BaiduPCS-Go/releases/download/v$version/BaiduPCS-Go-v$version-windows-x64.zip",
+                "extract_dir": "BaiduPCS-Go-v$version-windows-x64"
+            },
+            "32bit": {
+                "url": "https://github.com/iikira/BaiduPCS-Go/releases/download/v$version/BaiduPCS-Go-v$version-windows-x86.zip",
+                "extract_dir": "BaiduPCS-Go-v$version-windows-x86"
+            }
+        }
+    }
+}
