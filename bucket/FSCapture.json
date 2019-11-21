@@ -1,0 +1,22 @@
+{
+    "homepage": "https://www.faststone.org/FSCaptureDetail.htm",
+    "description": "A powerful, lightweight, yet full-featured screen capture tool and screen video recorder. 中文版, 飞扬时空汉化.",
+    "license": "Shareware",
+    "version": "9.2",
+    "url": "https://github.com/zhoujin7/tomato-extra/raw/master/apps/FSCapture-9.2.7z",
+    "hash": "bdce085628b4750a39acdec576b16b98cae8bd350632484c721b121dd5bb5b6e",
+    "bin": "FSCapture.exe",
+    "shortcuts": [
+        [
+            "FSCapture.exe",
+            "FSCapture"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/zhoujin7/tomato-extra/tree/master/apps",
+        "re": "FSCapture-([\\d\\.]+).7z"
+    },
+    "autoupdate": {
+        "url": "https://github.com/zhoujin7/tomato-extra/raw/master/apps/FSCapture-$version.7z"
+    }
+}
