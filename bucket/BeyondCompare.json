@@ -8,7 +8,7 @@
     "version": "4.3.2.24472",
     "architecture": {
         "64bit": {
-            "url": "C:/development/ordinarydev/tomato-extra-private/apps/BeyondCompare-x64-4.3.2.24472.7z",
+            "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/BeyondCompare-x64-4.3.2.24472.7z",
             "hash": "3326705e819b518bad8e59febcba9942477bc4924a67f8057a7d17a2f024ea68"
         }
     },
@@ -23,17 +23,17 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/zhoujin7/tomato-extra/tree/master/apps",
+        "url": "https://sourceforge.net/projects/tomato-extra/files/apps/",
         "re": "BeyondCompare-x64-([\\d\\.]+).7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "C:/development/ordinarydev/tomato-extra-private/apps/BeyondCompare-x64-$version.7z"
+                "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/BeyondCompare-x64-$version.7z"
             }
         },
         "hash": {
-            "url": "https://github.com/zhoujin7/tomato-extra/tree/master/apps/sha256sum.txt"
+            "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/sha256sum.txt"
         }
     }
 }
