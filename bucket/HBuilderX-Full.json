@@ -1,0 +1,27 @@
+{
+    "homepage": "https://www.dcloud.io/hbuilderx.html",
+    "version": "2.4.2.20191115",
+    "license": "Freeware",
+    "extract_dir": "HBuilderX",
+    "url": "https://download.dcloud.net.cn/HBuilderX.2.4.2.20191115.zip",
+    "hash": "4a36420a0e59cc129c16f8bc0dc472608e8b0f855e8198322703b393b59c627a",
+    "bin": [
+        [
+            "HBuilderX.exe",
+            "HBuilderX-Full"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "HBuilderX.exe",
+            "HBuilderX-Full"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.dcloud.io/docs/HBuilder.json",
+        "jp": "$.win[2].version"
+    },
+    "autoupdate": {
+        "url": "https://download.dcloud.net.cn/HBuilderX.$version.zip"
+    }
+}
