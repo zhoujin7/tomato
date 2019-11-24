@@ -1,14 +1,33 @@
-﻿{
+{
     "homepage": "https://www.disktool.cn/",
-    "version": "8.2",
+    "version": "8.3",
     "license": "freeware",
     "description": "AOMEI Partition Assistant is free disk partition manager. 傲梅分区助手.",
     "url": "http://www2.aomeisoftware.com/download/pacn/PAGreen.zip",
-    "hash": "2a467dba17d32b0d7fec33b8a03d1c6ba529f0ac8a27d42b0870c93de4dd981d",
+    "hash": "46605c46318162d22295e24a04526c32585c7e23860c6b3f7cd7a9a7d6b7b151",
     "extract_dir": "PA_Green",
     "checkver": {
         "url": "https://www.disktool.cn/download.html",
         "re": "分区助手([\\d\\.]+)"
+    },
+    "installer": {
+        "script": "New-Item -Path \"$dir\\usecode.ini\" -ItemType File -Value \"[CHK]`r`nchk=true\""
+    },
+    "uninstaller": {
+        "script": [
+            "if (!(is_admin)) {",
+            "    error \"Administrator rights are required to uninstall $app.\"",
+            "    exit 1",
+            "}",
+            "function rmFile($path) {",
+            "    if (Test-Path $path -PathType Leaf) {",
+            "        Remove-Item $path",
+            "    }",
+            "}",
+            "rmFile 'C:\\Windows\\ampa.exe'",
+            "rmFile 'C:\\Windows\\System32\\ampa.sys'",
+            "rmFile 'C:\\Windows\\SysWOW64\\ampa.sys'"
+        ]
     },
     "bin": "PartAssist.exe",
     "shortcuts": [
