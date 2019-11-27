@@ -26,7 +26,10 @@
             "}",
             "rmFile 'C:\\Windows\\ampa.exe'",
             "rmFile 'C:\\Windows\\System32\\ampa.sys'",
-            "rmFile 'C:\\Windows\\SysWOW64\\ampa.sys'"
+            "rmFile 'C:\\Windows\\SysWOW64\\ampa.sys'",
+            "rmFile 'C:\\AMTAG.BIN'",
+            "Remove-Item C:\\Aomei -Force -Recurse",
+            "Remove-Item C:\\ProgramData\\AomeiBR -Force -Recurse"
         ]
     },
     "bin": "PartAssist.exe",
