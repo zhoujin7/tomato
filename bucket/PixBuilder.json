@@ -35,7 +35,7 @@
         "PixBuilder.ini"
     ],
     "uninstaller": {
-        "script": "Get-ChildItem \"$dir\\*.ini\" | Where-Object { !$_.LinkType } | Copy-Item $_ $persist_dir"
+        "script": "Get-ChildItem \"$dir\\*.ini\" | Where-Object { !$_.LinkType } | if ($_) { Copy-Item $_ $persist_dir }"
     },
     "bin": "PixBuilder.exe",
     "shortcuts": [
