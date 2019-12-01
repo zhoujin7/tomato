@@ -1,10 +1,10 @@
 {
-    "version": "5.1.7.2",
+    "version": "5.1.8",
     "description": "An Internet censorship circumventing tunnel tool, forked from shadowsocksR, maintained now by HMBSbige.",
     "homepage": "https://github.com/HMBSbige/ShadowsocksR-Windows",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases/download/5.1.7.2/ShadowsocksR-net48-5.1.7.2.7z",
-    "hash": "7d96253997fbea32fa8feffab83f2b05fb1e5e3e9fced3b072877096bf8e2b84",
+    "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases/download/5.1.8/ShadowsocksR-net48-5.1.8.7z",
+    "hash": "977669ba0aaa2b326f6a1e589de1e22dc2e3d46c45d8235a89c85a6ed1d94976",
     "bin": "ShadowsocksR.exe",
     "shortcuts": [
         [
