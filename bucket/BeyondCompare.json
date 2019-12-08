@@ -5,11 +5,11 @@
         "identifier": "Shareware",
         "url": "https://www.scootersoftware.com/index.php?zz=kb_licensev4"
     },
-    "version": "4.3.2.24472",
+    "version": "4.3.3.24545",
     "architecture": {
         "64bit": {
-            "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/BeyondCompare-x64-4.3.2.24472.7z",
-            "hash": "3326705e819b518bad8e59febcba9942477bc4924a67f8057a7d17a2f024ea68"
+            "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/BeyondCompare-x64-4.3.3.24545.7z",
+            "hash": "6e0a38bc2db46482aade5b6c913d1416559d71bdd3589d3d4961e2a2209e8761"
         }
     },
     "bin": [
