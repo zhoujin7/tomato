@@ -53,7 +53,8 @@
             }
         },
         "hash": {
-            "url": "http://download.macromedia.com/pub/coldfusion/java/java8/JDK$version/sha256-checksums.txt"
+            "url": "https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html",
+            "find": "$basename.*([a-fA-F0-9]{64})\"};"
         }
     }
 }
