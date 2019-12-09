@@ -1,4 +1,5 @@
 {
+    "description": "Paste the contents of the clipboard into files.",
     "homepage": "https://github.com/huiyadanli/PasteEx",
     "version": "1.1.7.8",
     "license": "GPL-3.0-or-later",
