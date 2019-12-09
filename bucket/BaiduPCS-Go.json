@@ -1,4 +1,5 @@
 {
+    "description": "Baidu Webdisk Client. 百度网盘客户端.",
     "version": "3.6.1",
     "homepage": "https://github.com/iikira/BaiduPCS-Go",
     "license": "Apache-2.0",
