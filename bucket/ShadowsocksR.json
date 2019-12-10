@@ -47,6 +47,10 @@
         "replace": "${version}"
     },
     "autoupdate": {
-        "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases/download/$matchVersion/$matchFilename"
+        "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases/download/$matchVersion/$matchFilename",
+        "hash": {
+            "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases",
+            "find": "(?s)$basename.*?$sha256"
+        }
     }
 }
