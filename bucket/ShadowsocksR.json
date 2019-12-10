@@ -13,8 +13,6 @@
         ]
     ],
     "pre_install": [
-        "Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/HMBSbige/ShadowsocksR-Windows/master/shadowsocks-csharp/Data/chn_ip.txt\" -OutFile $original_dir\\chn_ip.txt",
-        "Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/HMBSbige/ShadowsocksR-Windows/master/shadowsocks-csharp/Data/proxy.pac.txt\" -OutFile $original_dir\\pac.txt",
         "#Create placeholder files",
         "function CreateFile([String] $file, [String] $content = $null) {",
         "    if(!(Test-Path \"$persist_dir\\$file\")) {",
@@ -43,8 +41,12 @@
         "user.rule",
         "user-rule.txt"
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases",
+        "re": "(?<filename>ShadowsocksR-net48-(?<version>[\\d.]+)\\.(zip|7z))",
+        "replace": "${version}"
+    },
     "autoupdate": {
-        "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases/download/$version/ShadowsocksR-net48-$version.7z"
+        "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases/download/$matchVersion/$matchFilename"
     }
 }
