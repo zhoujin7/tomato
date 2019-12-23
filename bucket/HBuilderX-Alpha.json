@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.dcloud.io/hbuilderx.html",
-    "version": "2.4.8.20191220-alpha",
+    "version": "2.4.9.20191223-alpha",
     "license": "Freeware",
     "extract_dir": "HBuilderX",
-    "url": "https://download.dcloud.net.cn/HBuilderX.2.4.8.20191220-alpha.zip",
-    "hash": "f98de508dfc292b807fc470caee5b70f2553358336547aa154bc62189ed7feef",
+    "url": "https://download.dcloud.net.cn/HBuilderX.2.4.9.20191223-alpha.zip",
+    "hash": "5c406c35dfbb62b3c69e56ca0dd3334ed9142ebbfc0c747d58c859d961c48eaa",
     "bin": [
         [
             "HBuilderX.exe",
