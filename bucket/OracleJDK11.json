@@ -2,14 +2,14 @@
     "homepage": "https://www.oracle.com/technetwork/java/javase/overview/index.html",
     "description": "Oracle JDK 11",
     "license": "https://java.com/otnlicense",
-    "version": "11.0.5",
+    "version": "11.0.6",
     "architecture": {
         "64bit": {
-            "url": "http://download.macromedia.com/pub/coldfusion/java/java11/jdk-11.0.5_windows-x64_bin.zip",
-            "hash": "8cda919c402e92d6782e9a68bcb9fe462ac29304de48b4377eb4112891f351b2"
+            "url": "http://download.macromedia.com/pub/coldfusion/java/java11/jdk-11.0.6_windows-x64_bin.zip",
+            "hash": "fe40e3328dd48e05c650df3787934292ed3b476285e4452af605a239481ef84d"
         }
     },
-    "extract_dir": "jdk-11.0.5",
+    "extract_dir": "jdk-11.0.6",
     "env_add_path": "bin",
     "env_set": {
         "JAVA_HOME": "$dir"
