@@ -5,12 +5,8 @@
     "version": "8u241",
     "architecture": {
         "64bit": {
-            "url": "http://download.macromedia.com/pub/coldfusion/java/java8/JDK8u241/jdk-8u241-windows-x64.exe#/dl.7z",
+            "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/jdk-8u241-windows-x64.exe#/dl.7z",
             "hash": "63e768fb297f50210b00b34bb362e80ca98384cb275c019acdb49f646d8a1549"
-        },
-        "32bit": {
-            "url": "http://download.macromedia.com/pub/coldfusion/java/java8/JDK8u241/jdk-8u241-windows-i586.exe#/dl.7z",
-            "hash": "0c494e4bf938a9e03df35c811b4c043129b2a8f1b3840fbebe1f76b94e97f4e8"
         }
     },
     "extract_to": "tmp",
@@ -46,10 +42,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://download.macromedia.com/pub/coldfusion/java/java8/JDK$version/jdk-$version-windows-x64.exe#/dl.7z"
-            },
-            "32bit": {
-                "url": "http://download.macromedia.com/pub/coldfusion/java/java8/JDK$version/jdk-$version-windows-i586.exe#/dl.7z"
+                "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/jdk-$version-windows-x64.exe#/dl.7z"
             }
         },
         "hash": {
