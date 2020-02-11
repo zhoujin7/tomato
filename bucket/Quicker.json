@@ -17,6 +17,27 @@
         "url": "https://getquicker.net/Download",
         "re": "快速通道版本[\\w\\W]*?(\\d.[\\d.]+)"
     },
+    "installer": {
+        "script": [
+            "if (!(is_admin)) {",
+            "    error \"Administrator rights are required to uninstall $app.\"",
+            "    exit 1",
+            "}",
+            "New-Item Registry::HKEY_CLASSES_ROOT\\quicker -Force -ItemType String -Value 'URL:Quicker Protocol' | Out-Null",
+            "New-ItemProperty Registry::HKEY_CLASSES_ROOT\\quicker -Force -PropertyType string -Name 'URL Protocol' -Value '' | Out-Null",
+            "New-Item Registry::HKEY_CLASSES_ROOT\\quicker\\DefaultIcon -Force -ItemType String -Value 'Quicker.exe' | Out-Null",
+            "New-Item Registry::HKEY_CLASSES_ROOT\\quicker\\shell\\open\\command -Force -ItemType String -Value \"`\"$dir\\QuickerStarter.exe`\" `\"%1`\"\" | Out-Null"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if (!(is_admin)) {",
+            "    error \"Administrator rights are required to uninstall $app.\"",
+            "    exit 1",
+            "}",
+            "Remove-Item Registry::HKEY_CLASSES_ROOT\\quicker -Force -Recurse | Out-Null"
+        ]
+    },
     "bin": "Quicker.exe",
     "shortcuts": [
         [
