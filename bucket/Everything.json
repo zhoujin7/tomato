@@ -1,0 +1,61 @@
+{
+    "version": "1.4.1.965",
+    "description": "Locate files and folders by name instantly.",
+    "homepage": "https://www.voidtools.com",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.voidtools.com/Everything-1.4.1.965.x64.zip",
+            "hash": "052ae9869118fad0db403057a875d34e89772d062d68460287af3db001ab8ba1"
+        },
+        "32bit": {
+            "url": "https://www.voidtools.com/Everything-1.4.1.965.x86.zip",
+            "hash": "cb5add03bf4dad3f36908ed17205f7f0ef796a7504c18357a900e36867e625a8"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\Everything.ini\")) { & \"$dir\\Everything.exe\" -install-config null }",
+        "if (!(Test-Path \"$persist_dir\\Everything.db\")) { New-Item \"$dir\\Everything.db\" | Out-Null }",
+        "if (Test-Path \"$persist_dir\\Bookmarks.csv\") {",
+        "    Copy-Item \"$persist_dir\\Bookmarks.csv\" \"$dir\"",
+        "} else {",
+        "    New-Item \"$dir\\Bookmarks.csv\" | Out-Null",
+        "}"
+    ],
+    "installer": {
+        "script": [
+            "#Download translation file",
+            "Invoke-WebRequest -Uri \"https://www.voidtools.com/Everything.lng.zip\" -OutFile $original_dir\\Everything.lng.zip",
+            "Expand-Archive $original_dir\\Everything.lng.zip -DestinationPath $original_dir",
+            "Remove-Item $original_dir\\Everything.lng.zip"
+        ]
+    },
+    "uninstaller": {
+        "script": "if (Test-Path \"$dir\\Bookmarks.csv\") { Copy-Item \"$dir\\Bookmarks.csv\" \"$persist_dir\" -Force }"
+    },
+    "bin": "Everything.exe",
+    "shortcuts": [
+        [
+            "Everything.exe",
+            "Everything"
+        ]
+    ],
+    "persist": [
+        "Everything.db",
+        "Everything.ini"
+    ],
+    "checkver": "Download Everything ([\\d.]+)",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.voidtools.com/Everything-$version.x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.voidtools.com/Everything-$version.x86.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/Everything-$version.sha256"
+        }
+    }
+}
