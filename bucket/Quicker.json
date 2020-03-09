@@ -1,7 +1,7 @@
 {
     "homepage": "https://getquicker.net/",
     "version": "1.5.1.0",
-    "license": "freeware",
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://getquicker.net/download/item/fast_x64#.msi",
