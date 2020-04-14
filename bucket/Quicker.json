@@ -1,15 +1,15 @@
 {
     "homepage": "https://getquicker.net/",
-    "version": "1.5.18.0",
+    "version": "1.5.19.0",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://getquicker.net/download/item/fast_x64#.msi",
-            "hash": "e33b97545935647ad2781f339ebfdce086d40542e219e161a4b25cde2814b973"
+            "hash": "0956a8c1d7622b2daca4e19fe70c01c7b9575d2b2ac813c40ca0f6f4df77fa11"
         },
         "32bit": {
             "url": "https://getquicker.net/download/item/fast_x86#.msi",
-            "hash": "25898e57f86e196862cfd7071fc06e46bbfb159164b112a682c8911be8fb2ac5"
+            "hash": "fea5312d42b57b15b7cd9e7806fd7cb97e053e1f35fcc777981ea3763b63fd2c"
         }
     },
     "extract_dir": "Quicker",
