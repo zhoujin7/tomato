@@ -4,7 +4,7 @@
     "homepage": "https://github.com/HMBSbige/ShadowsocksR-Windows",
     "license": "GPL-3.0-only",
     "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases/download/5.1.9/ShadowsocksR-net48-5.1.9.zip",
-    "hash": "fe56a556da049b7ffdeca4d0a5dcae675aa288e5baa2676ee2493c3eb352254c",
+    "hash": "4260189395ee3dac6431c372981d8774794c832b220bb79d9b02dcc0a672e385",
     "bin": "ShadowsocksR.exe",
     "shortcuts": [
         [
