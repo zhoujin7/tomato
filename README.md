@@ -5,7 +5,7 @@ All non-free Apps are unavailable, it is useless to install them.
 
 See the link below for details:
 
-https://github.com/rasa/scoop-directory/blob/master/by-score.md#zhoujin7_tomato
+https://rasa.github.io/scoop-directory/by-score#zhoujin7_tomato
 
 **How to install the apps from this bucket?**
 
