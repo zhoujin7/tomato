@@ -13,7 +13,8 @@
         ]
     },
     "persist": [
-        "Docs"
+        "Docs",
+        "qt.conf"
     ],
     "bin": [
         [
