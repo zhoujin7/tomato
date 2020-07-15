@@ -6,13 +6,30 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/PyQt5/QtDesigner/releases/download/5.15.0.1/QtDesigner_Windows_x86.7z",
-            "hash": "95d0f891da1405363c0c91e550ff7c755c07a70306cc9e8395af49ba9d789173"
+            "hash": "95d0f891da1405363c0c91e550ff7c755c07a70306cc9e8395af49ba9d789173",
+            "installer": {
+                "script": [
+                    "if (!(Test-Path -Path \"$dir\\Docs\")) {",
+                    "   New-Item -Path \"$dir\\Docs\" -ItemType Directory -Force | Out-Null",
+                    "}"
+                ]
+            }
         },
         "32bit": {
             "url": "https://github.com/PyQt5/QtDesigner/releases/download/5.15.0.1/QtDesigner_Windows_x86.7z",
-            "hash": "95d0f891da1405363c0c91e550ff7c755c07a70306cc9e8395af49ba9d789173"
+            "hash": "95d0f891da1405363c0c91e550ff7c755c07a70306cc9e8395af49ba9d789173",
+            "installer": {
+                "script": [
+                    "if (!(Test-Path -Path \"$dir\\Docs\")) {",
+                    "   New-Item -Path \"$dir\\Docs\" -ItemType Directory -Force | Out-Null",
+                    "}"
+                ]
+            }
         }
     },
+    "persist": [
+        "Docs"
+    ],
     "bin": [
         [
             "designer.exe",
