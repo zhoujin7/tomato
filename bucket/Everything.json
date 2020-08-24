@@ -1,11 +1,11 @@
 {
-    "version": "1.4.1.988",
+    "version": "1.4.1.986",
     "description": "Locate files and folders by name instantly.",
     "homepage": "https://www.voidtools.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/Everything-1.4.1.986.x64.zip",
+            "url": "https://sourceforge.net/projects/tomato-extra/files/apps/Everything-1.4.1.986.x64.zip",
             "hash": "d5c560ffa25c8836fd76a897b5754339ca4ce06fc7c15a7a4a73983d8bb87bcb"
         }
     },
