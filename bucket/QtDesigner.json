@@ -5,6 +5,7 @@
     "license": "GPL-3.0-only",
     "url": "https://github.com/PyQt5/QtDesigner/releases/download/5.15.0/Windows.7z",
     "hash": "0bf572ff2adbf63e733fa296e47b524c03aa2bce1aabe34f9d9775ab7c5d8064",
+    "extract_dir": "Windows",
     "installer": {
         "script": [
             "if (!(Test-Path -Path \"$dir\\Docs\")) {",
