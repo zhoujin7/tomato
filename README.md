@@ -1,8 +1,6 @@
 # tomato
 My personal scoop bucket.
 
-All non-free Apps are unavailable, it is useless to install them.
-
 See the link below for details:
 
 https://rasa.github.io/scoop-directory/by-score#zhoujin7_tomato
