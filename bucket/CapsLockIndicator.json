@@ -1,10 +1,10 @@
 {
-    "version": "3.11.0.0",
+    "version": "3.11.1.0",
     "description": "A small utility that indicates the state of the Num lock, Caps lock and Scroll lock key.",
     "homepage": "https://github.com/jonaskohl/CapsLockIndicator",
     "license": "Apache-2.0",
-    "url": "https://github.com/jonaskohl/CapsLockIndicator/releases/download/3.11.0.0/CLIv3-3.11.0.0.exe",
-    "hash": "4396672634cd1bb679700da144a60b8480333e0fbd13cd3232c922e2c9092ce1",
+    "url": "https://github.com/jonaskohl/CapsLockIndicator/releases/download/3.11.1.0/CLIv3-3.11.1.0.exe",
+    "hash": "da2732f9fb06cfa2ea8942283240054b4cbdf7cdac0740a303d179eddc37c084",
     "installer": {
         "script": [
             "Move-Item $original_dir\\CLI*.exe  $original_dir\\CapsLockIndicator.exe",
