@@ -16,7 +16,7 @@
     },
     "checkver": {
         "url": "https://www.adobe.com/support/coldfusion/downloads.html",
-        "re": "JAVA SE (11[\\d.]+[^(]*)"
+        "re": "JAVA SE (11[\\d.]+)[^<]*"
     },
     "autoupdate": {
         "architecture": {
@@ -25,7 +25,7 @@
             }
         },
         "hash": {
-            "url": "http://download.macromedia.com/pub/coldfusion/java/java11/$cleanVersion/jdk$cleanVersion-checksum.txt",
+            "url": "https://download.macromedia.com/pub/coldfusion/java/java11/$majorVersion$patchVersion/jdk$cleanVersion-checksum.txt",
             "find": "$basename.*([a-fA-F0-9]{64})"
         },
         "extract_dir": "jdk-$version"

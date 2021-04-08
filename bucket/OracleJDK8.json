@@ -53,7 +53,7 @@
             }
         },
         "hash": {
-            "url": "http://download.macromedia.com/pub/coldfusion/java/java8/JDK$version/jdk$version-checksum.txt",
+            "url": "https://download.macromedia.com/pub/coldfusion/java/java8/$version/jdk/jdk$version-checksum.txt",
             "find": "$basename.*([a-fA-F0-9]{64})"
         }
     }
