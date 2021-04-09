@@ -22,6 +22,6 @@
         "jp": "$.version"
     },
     "autoupdate": {
-        "url": "https://download.dcloud.net.cn/HBuilderX.$version.full.zip"
+        "url": "https://download1.dcloud.net.cn/download/HBuilderX.$version-alpha.zip"
     }
 }
