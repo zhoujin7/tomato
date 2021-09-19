@@ -9,6 +9,9 @@
     "bin": [
         "bin/activemq.bat"
     ],
+    "post_install": [
+        "Start-Job -ScriptBlock { Invoke-Expression (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/zhoujin7/tomato/master/scripts/fix-activemq-classic.ps1') } | Out-Null"
+    ],
     "suggest": {
         "JDK": [
             "tomcat/oraclejdk8",
