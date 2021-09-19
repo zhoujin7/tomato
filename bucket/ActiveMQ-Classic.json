@@ -4,7 +4,7 @@
     "homepage": "https://activemq.apache.org/components/classic/",
     "license": "Apache-2.0",
     "url": "https://mirror-hk.koddos.net/apache/activemq/5.16.3/apache-activemq-5.16.3-bin.zip",
-    "hash": "sha512:63897f68fe7024181d86b0c4b51b4440a152d911b05a19801e229bcb2a7e33733947157326ecf12b9cafedc3ec092fdc68db2ecbdf5532440074ce067837039b",
+    "hash": "sha512:9f390425260d3a26ba85e7fec976e185106b0e9188bbba117910c02291a94a5f82d70b39925fed8da8c79f826e2fff6ec85e0930149caf0045ac71c5cee3f863",
     "extract_dir": "apache-activemq-5.16.3",
     "bin": [
         "bin/activemq.bat"
