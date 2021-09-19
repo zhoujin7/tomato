@@ -24,7 +24,7 @@
     "autoupdate": {
         "url": "https://mirror-hk.koddos.net/apache/activemq/activemq-artemis/$version/apache-artemis-$version.zip",
         "hash": {
-            "url": "$url.sha512"
+            "url": "https://downloads.apache.org/activemq/activemq-artemis/$version/apache-artemis-$version-bin.zip.sha512"
         },
         "extract_dir": "apache-artemis-$version"
     }

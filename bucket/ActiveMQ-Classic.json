@@ -1,0 +1,31 @@
+{
+    "version": "5.16.3",
+    "description": "Apache ActiveMQ® is the most popular and powerful open source messaging and Integration Patterns server.",
+    "homepage": "https://activemq.apache.org/components/classic/",
+    "license": "Apache-2.0",
+    "url": "https://mirror-hk.koddos.net/apache/activemq/5.16.3/apache-activemq-5.16.3-bin.zip",
+    "hash": "sha512:63897f68fe7024181d86b0c4b51b4440a152d911b05a19801e229bcb2a7e33733947157326ecf12b9cafedc3ec092fdc68db2ecbdf5532440074ce067837039b",
+    "extract_dir": "apache-activemq-5.16.3",
+    "bin": [
+        "bin/activemq.bat"
+    ],
+    "suggest": {
+        "JDK": [
+            "tomcat/oraclejdk8",
+            "java/openjdk",
+            "java/adoptopenjdk-hotspot",
+            "java/zulu"
+        ]
+    },
+    "checkver": {
+        "url": "https://activemq.apache.org/components/classic/download/",
+        "regex": "apache-activemq-(\\d.[\\d.]+\\d)-bin.zip"
+    },
+    "autoupdate": {
+        "url": "https://mirror-hk.koddos.net/apache/activemq/$version/apache-activemq-$version.zip",
+        "hash": {
+            "url": "https://downloads.apache.org/activemq/$version/apache-activemq-$version-bin.zip.sha512"
+        },
+        "extract_dir": "apache-activemq-$version"
+    }
+}
