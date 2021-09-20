@@ -22,7 +22,7 @@
         "regex": "apache-artemis-(\\d.[\\d.]+\\d)-bin.zip"
     },
     "autoupdate": {
-        "url": "https://mirror-hk.koddos.net/apache/activemq/activemq-artemis/$version/apache-artemis-$version.zip",
+        "url": "https://mirror-hk.koddos.net/apache/activemq/activemq-artemis/$version/apache-artemis-$version-bin.zip",
         "hash": {
             "url": "https://downloads.apache.org/activemq/activemq-artemis/$version/apache-artemis-$version-bin.zip.sha512"
         },
