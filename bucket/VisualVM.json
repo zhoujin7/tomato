@@ -18,9 +18,11 @@
             "--jdkhome \"%JAVA_HOME%\""
         ]
     ],
-    "pre_install": [
-        "Invoke-Expression (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/zhoujin7/tomato/master/scripts/gen-visualvm-vbs.ps1')"
-    ],
+    "installer": {
+        "script": [
+            "Invoke-Expression (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/zhoujin7/tomato/master/scripts/gen-visualvm-vbs.ps1')"
+        ]
+    },
     "checkver": {
         "github": "https://github.com/oracle/visualvm"
     },
