@@ -7,7 +7,7 @@
     "extract_dir": "visualvm_21",
     "bin": [
         [
-            "bin\\visualvm.exe",
+            "bin\\visualvm.vbs",
             "visualvm"
         ]
     ],
@@ -17,6 +17,9 @@
             "VisualVM",
             "--jdkhome \"%JAVA_HOME%\""
         ]
+    ],
+    "post_install": [
+        "Invoke-Expression (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/zhoujin7/tomato/master/scripts/gen-visualvm-vbs.ps1')"
     ],
     "checkver": {
         "github": "https://github.com/oracle/visualvm"
