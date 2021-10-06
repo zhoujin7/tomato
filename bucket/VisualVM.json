@@ -12,7 +12,7 @@
             "--jdkhome \"%JAVA_HOME%\""
         ]
     ],
-    "notes": "Execute it after installation: Invoke-Expression (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/zhoujin7/tomato/master/scripts/gen-visualvm-vbs.ps1')",
+    "notes": "Execute it after installation: \"iex (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/zhoujin7/tomato/master/scripts/gen-visualvm-vbs.ps1')\"",
     "checkver": {
         "github": "https://github.com/oracle/visualvm"
     },
