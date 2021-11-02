@@ -1,0 +1,16 @@
+on:
+  schedule:
+  - cron: '0 * * * *'
+name: Excavator-Shovel
+jobs:
+  excavate:
+    name: Excavator
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@main
+    - name: Excavate
+      uses: shovel-org/GithubActions@main
+      env:
+        GITH_EMAIL: zhoujin7@outlook.com
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SKIP_UPDATED: '1'
