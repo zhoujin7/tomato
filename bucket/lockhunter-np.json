@@ -68,7 +68,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://lockhunter.com/download.htm",
+        "url": "https://lockhunter.com/",
         "regex": "Version: ([\\d\\.]+)"
     },
     "autoupdate": {
