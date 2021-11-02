@@ -4,11 +4,11 @@ on:
 name: Excavator-Shovel
 jobs:
   excavate:
-    name: Excavator
+    name: ExcavatorShovel
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@main
-    - name: Excavate
+    - name: ExcavateShovel
       uses: shovel-org/GithubActions@main
       env:
         GITH_EMAIL: zhoujin7@outlook.com
