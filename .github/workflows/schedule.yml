@@ -4,12 +4,12 @@ on:
 name: Excavator
 jobs:
   excavate:
-    name: Excavate
-    runs-on: ubuntu-latest
+    name: Excavator
+    runs-on: windows-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@main
     - name: Excavate
-      uses: Ash258/Scoop-GithubActions@stable
+      uses: shovel-org/GithubActions@main
       env:
         GITH_EMAIL: zhoujin7@outlook.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
