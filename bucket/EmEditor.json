@@ -23,7 +23,7 @@
     "post_install": "Remove-Item \"$dir\\eeUseIni.ini\"",
     "checkver": {
         "url": "https://www.emeditor.com/download/",
-        "re": "<h3>Download latest version: v([\\d.]+)</h3>"
+        "regex": "<h3>Download latest version: v([\\d.]+)</h3>"
     },
     "autoupdate": {
         "architecture": {
