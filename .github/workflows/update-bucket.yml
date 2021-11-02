@@ -1,0 +1,42 @@
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Enter 'force' if you want to force a refresh"
+        required: false
+        default: ''
+
+name: Update bucket
+jobs:
+  update:
+    name: ♻ Update manifests
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇ Checkout repo
+        uses: actions/checkout@master
+      - name: ♻ Run autoupdate
+        uses: foosel/scoop-checkver-action@main
+        with:
+          bucket: bucket
+          force: ${{ github.event.inputs.force }}
+      - name: 🚀 Deploy changes
+        run: |
+          # set git author
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # create individual commit per updated manifest
+          while read file; do
+            if [[ $file == bucket/* ]] && [[ $file == *.json ]]; then
+              version=$(cat $file | jq -r .version)
+              manifest=$(basename $file .json)
+              message="$manifest: Update to version $version"
+              git add "$file"
+              git commit -m "$message"
+            fi
+          done < <(git diff --name-only)
+
+          # finally push
+          git push
