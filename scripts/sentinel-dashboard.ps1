@@ -2,5 +2,10 @@
 $dir = Convert-Path ($scoopDir + "/apps/sentinel-dashboard/current/")
 (Get-ChildItem -Path $dir -Filter *.jar)[0].name -match "\d[\d.]+\d" | Out-Null
 $version = $Matches[0]
+$customArgs = $args
+if (!"$args".Contains("-Dserver.port=")) {
+    $port = 31286
+    $customArgs = "-Dserver.port=$port $args"
+}
 $jarPath = $dir + "sentinel-dashboard-$version.jar"
-java @args -jar $jarPath
+java $customArgs -jar $jarPath
