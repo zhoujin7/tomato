@@ -12,6 +12,7 @@
             "hash": "sha512:04511e661622653c4af5f90ee606a3ea70ebff2ada6ad3397532eef78d126b4e6b0ed8314d5582bd531a406fa54ae0c9eca0d36a2b888a57798c96bb45c5db37"
         }
     },
+    "extract_dir": "elasticsearch-6.4.0",
     "pre_install": [
         "    # Overwrite SCRIPT because elasticsearch-env.bat doesn't care if SCRIPT or ES_HOME are already set ...",
         "$file = \"$dir\\bin\\elasticsearch-env.bat\"",
