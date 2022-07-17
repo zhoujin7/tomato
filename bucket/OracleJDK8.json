@@ -2,7 +2,7 @@
     "homepage": "https://www.oracle.com/technetwork/java/javase/overview/index.html",
     "description": "Oracle JDK 8",
     "license": "https://java.com/otnlicense",
-    "version": 8u333
+    "version": "8u333",
     "architecture": {
         "64bit": {
             "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/jdk-8u333-windows-x64.exe#/dl.7z",
