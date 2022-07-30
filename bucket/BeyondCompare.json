@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/BeyondCompare-x64-4.4.2.26348.7z",
-            "hash": "348c2eb47fa72c9a6dde972e823c3f2d721b7db68ac96c57dcaf062aa46c8025"
+            "hash": "491accccf04b8cf0056e7a445c7293505e5121ab0fc0ef795510595f29bcbb91"
         }
     },
     "bin": [
