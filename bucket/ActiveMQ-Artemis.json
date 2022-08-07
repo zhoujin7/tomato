@@ -1,11 +1,11 @@
 {
-    "version": "2.21.0",
+    "version": "2.24.0",
     "description": "A Java diagnostic tooApache ActiveMQ Artemis is an open source project to build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system.",
     "homepage": "https://activemq.apache.org/components/artemis/",
     "license": "Apache-2.0",
-    "url": "https://mirror-hk.koddos.net/apache/activemq/activemq-artemis/2.21.0/apache-artemis-2.21.0-bin.zip",
-    "hash": "sha512:4d8f3c9ece21af7385f3d91d63154936fa459893b2489bf4ece24bcb976d3bd01ddeb822f26c384e5d74e5302028400ec356ead226aeb9e3629860c416946fe3",
-    "extract_dir": "apache-artemis-2.21.0",
+    "url": "https://mirror-hk.koddos.net/apache/activemq/activemq-artemis/2.24.0/apache-artemis-2.24.0-bin.zip",
+    "hash": "sha512:97e92d8e013dd44489718b5dd389064e1c9ca7944cffd10cc6f14c9b4aaefe722ae16aa2fd825e0b625750dc18e364e0f166df59695a64d0554157055745b50b",
+    "extract_dir": "apache-artemis-2.24.0",
     "bin": "bin/artemis.cmd",
     "suggest": {
         "JDK": [
