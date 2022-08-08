@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/alibaba/nacos",
     "license": "Apache-2.0",
-    "version": "1.4.4",
-    "url": "https://github.com/alibaba/nacos/releases/download/1.4.4/nacos-server-1.4.4.zip",
-    "hash": "5a83a8b3daa5b323a880f5a26b00c539a9cdd0d4a851ab3eda3e2e47d7c710e7",
+    "version": "2.1.1",
+    "url": "https://github.com/alibaba/nacos/releases/download/2.1.1/nacos-server-2.1.1.zip",
+    "hash": "6055dbabc56f52f7686adab04bbf10f4104eaeb8031fa6171980de9f31c92c93",
     "extract_dir": "nacos",
     "bin": [
         [
