@@ -24,7 +24,7 @@
         ]
     },
     "persist": [
-        "application.properties"
+        "conf/application.properties"
     ],
     "checkver": {
         "github": "https://github.com/alibaba/nacos"
