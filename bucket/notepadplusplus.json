@@ -42,7 +42,7 @@
             }
         },
         "hash": {
-            "url": "https://sourceforge.net/projects/tomato-extra/files/apps/sha256sum.txt"
+            "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/sha256sum.txt"
         }
     }
 }
