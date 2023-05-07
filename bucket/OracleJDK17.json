@@ -16,7 +16,7 @@
     },
     "checkver": {
         "url": "https://sourceforge.net/projects/tomato-extra/files/apps/",
-        "regex": "jdk-(17.(\\d.)+)_windows-x64_bin.zip"
+        "regex": "jdk-(17.[\\d.]+)_windows-x64_bin.zip"
     },
     "autoupdate": {
         "architecture": {
