@@ -9,13 +9,6 @@
             "hash": "f8194d7a9981452958b7ba3d0a54f99708dcb2363349a4d80cef90ff2d8ee18e"
         }
     },
-    "pre_install": [
-        "$manifest.persist | ForEach-Object {",
-        "    if ([io.path]::GetExtension($_)) {",
-        "        if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null }",
-        "    }",
-        "}"
-    ],
     "bin": "EmEditor.exe",
     "shortcuts": [
         [
