@@ -16,8 +16,8 @@
         ]
     ],
     "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\1Remote.db\")) { New-Item -Path \"$persist_dir\\1Remote.db\" -Type File | Out-Null }",
-        "if (!(Test-Path \"$persist_dir\\1Remote.json\")) { New-Item -Path \"$persist_dir\\1Remote.json\" -Type File | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\1Remote.db\")) { Set-Content -Encoding ASCII -Path \"$dir\\1Remote.db\" -Value $null }",
+        "if (!(Test-Path \"$persist_dir\\1Remote.json\")) { Set-Content -Encoding ASCII -Path \"$dir\\1Remote.json\" -Value $null }",
         "Set-Content -Path \"$persist_dir\\FORCE_INTO_PORTABLE_MODE\" -Value \"rename to 'FORCE_INTO_APPDATA_MODE' can save to AppData\""
     ],
     "persist": [
